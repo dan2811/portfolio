@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Daniel Jordan Portfolio</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
-
+    <script type="text/javascript" src="./script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
@@ -17,7 +17,8 @@
     <img src="assets/Sleeve Roll.jpg" id="sleeveRoll">
 
     
-        <h2 id="bioTitle">Bio</h2>
+        <h2 id="bioTitle" onclick="showBio()" onmouseover="underlineHeading()">Bio</h2>
+        
         <div id="bio">My name is Dan. I began learning the drums at 12 years old. Since then it has turned into a passion/obsession. I studied at Derby Yamaha Music School and achieved a distinction at grade 8 when I was 16. I then began playing in local cover bands around the Derbyshire area whilst studying Music Technology at Derby College. I achieved a triple distinction for my work on this course as well as obtaining a role at Derby Yamaha Music School as a drum teacher. At 18 I went on to study Music Technology and Production at the University of Derby, graduating with a 2:1. Since completing my degree I have performed all over the country with various bands and productions.
         I am now also accredited by the Derby & Derbyshire Music Partnership.
     </div>
@@ -30,12 +31,12 @@
         
 
 
-        <h2 id="projectsHead">Projects</h2>
+        <h2 id="projectsHead" onclick="showProjects()">Projects</h2>
 
-        <h3 id="p1title">Project 1</h3>
-        <img src="assets/project-placeholder.png" id="p1image">
-        <article id="p1text">Some text about project 1</article>
-        <ul id="p1tech">
+        <h3 id="p1title" class="project">Project 1</h3>
+        <img src="assets/project-placeholder.png" id="p1image" class="project">
+        <article id="p1text" class="project">Some text about project 1</article>
+        <ul id="p1tech" class="project">
             <h4>Technology used:</h4>
             <li>HTML</li>
             <li>Javascript</li>
@@ -43,12 +44,12 @@
             <li>GIT</li>
         </ul>
 
-        <h3 id="p2title">Project 2</h3>
-        <img src="assets/project-placeholder.png" id="p2image">
-        <article id="p2text">Some text about project 2</article>
+        <h3 id="p2title" class="project">Project 2</h3>
+        <img src="assets/project-placeholder.png" id="p2image" class="project">
+        <article id="p2text" class="project">Some text about project 2</article>
         
         
-        <ul id="p2tech">
+        <ul id="p2tech" class="project">
             <h4>Technology used:</h4>
             <li>HTML</li>
             <li>Javascript</li>
@@ -57,12 +58,12 @@
         </ul>
       
 
-        <h3 id="p3title">Project 3</h3>
-        <img src="assets/project-placeholder.png" id="p3image">
-        <article id="p3text">Some text about project 3</article>
+        <h3 id="p3title" class="project">Project 3</h3>
+        <img src="assets/project-placeholder.png" id="p3image" class="project">
+        <article id="p3text" class="project">Some text about project 3</article>
 
         
-        <ul id="p3tech">
+        <ul id="p3tech" class="project">
             <h4>Technology used:</h4>
             <li>HTML</li>
             <li>Javascript</li>
@@ -71,11 +72,11 @@
         </ul>
    
 
-        <h3 id="p4title">Project 4</h3>
-        <img src="assets/project-placeholder.png" id="p4image">
-        <article id="p4text">Some text about project 4</article>
+        <h3 id="p4title" class="project">Project 4</h3>
+        <img src="assets/project-placeholder.png" id="p4image" class="project">
+        <article id="p4text" class="project">Some text about project 4</article>
   
-        <ul id="p4tech">
+        <ul id="p4tech" class="project">
             <h4>Technology used:</h4>
             <li>HTML</li>
             <li>Javascript</li>
@@ -85,10 +86,10 @@
       
 
     
-        <h2 id="contact">Contact</h2>
+        <h2 id="contact" onclick="showContact()">Contact</h2>
 
         
-            <ul id="details">
+            <ul id="details" class="contact">
                 <li>Email: djordandrums@gmail.com</li>
                 <li>Phone: 07557984135</li>
                 <li>Address: Flat 505 Ensign House,<br>
@@ -98,7 +99,7 @@
                     IG11 7UZ
                 </li>
             </ul>
-            <form id="form">
+            <form id="form"  class="contact">
                 <h3>Send me a message!</h3>
                 <label>Email:</label>
                 <input type="email" id="email"> <br>
@@ -109,5 +110,6 @@
                 <input type="submit">
 
             </form>
-    
+
+
 </body>

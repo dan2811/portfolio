@@ -7,13 +7,13 @@ body {
     grid-template-columns: 15% 15% 15% 15% 15% 25%;
     grid-template-rows: auto;
     grid-template-areas: 
-    ". . heading heading swirl swirl"
+    ". heading heading heading swirl swirl"
     "sleeveRoll sleeveRoll bioTitle . swirl swirl"
     "sleeveRoll sleeveRoll bio bio swirl swirl"
     "sleeveRoll sleeveRoll bio bio swirl swirl"
     "sleeveRoll sleeveRoll linkedIn linkedIn swirl swirl"
-    "sleeveRoll sleeveRoll . . . ."
-    "sleeveRoll sleeveRoll . . . ."
+    "sleeveRoll sleeveRoll . . swirl swirl"
+    "sleeveRoll sleeveRoll . . swirl swirl"
     ". . . . . ."
     ". projectsHead projectsHead . . ."
     ". p1title . p2title . ."
@@ -46,6 +46,13 @@ h1 {
 
 #bioTitle {
     grid-area: bioTitle;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 500ms;
+}
+
+#bioTitle:hover{
+    text-decoration-color: rgb(255, 255, 255);
+
 }
 
 #bio {
@@ -68,6 +75,12 @@ h1 {
 
 #projectsHead {
     grid-area: projectsHead;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 500ms;
+}
+
+#projectsHead:hover{
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 #p1title {
@@ -136,6 +149,12 @@ h1 {
 
 #contact {
     grid-area: contact;
+    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 500ms;
+}
+
+#contact:hover {
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 #details {
