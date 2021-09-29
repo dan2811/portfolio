@@ -1,11 +1,145 @@
 body {
     background-color: black;
     color: whitesmoke;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". . heading heading . ."
+    "sleeveRoll sleeveRoll bioTitle . . ."
+    "sleeveRoll sleeveRoll bio bio bio ."
+    "sleeveRoll sleeveRoll bio bio bio ."
+    "sleeveRoll sleeveRoll bio bio bio ."
+    "sleeveRoll sleeveRoll . . . ."
+    "sleeveRoll sleeveRoll linkedIn linkedIn . ."
+    ". projectsHead projectsHead . . ."
+    ". p1title . p2title . ."
+    ". p1image p1tech p2image p2tech ."
+    ". p1text p1text p2text p2text ."
+    ". p3title . p4title . ."
+    ". p3image p3tech p4image p4tech ."
+    ". p3text p3text p4text p4text ."
+    ". contact contact . . ."
+    ". details details form form form"
+    ". details details form form form"
+    ". details details form form form";
+    justify-content: stretch;
 }
+
 h1 {
-    color: whitesmoke;
+    grid-area: heading;
+}
+
+#sleeveRoll {
+    grid-area: sleeveRoll;
+    max-width: 100%;
+}
+
+#bioTitle {
+    grid-area: bioTitle;
 }
 
 #bio {
-    color: whitesmoke;
+    grid-area: bio;
+}
+
+#linkedInImage {
+    max-width: 10rem;
+    grid-area: linkedIn;
+}
+
+/* #linkedIn {
+    grid-area: linkedIn;
+} */
+
+#projects {
+    grid-area: projects;
+}
+
+#projectsHead {
+    grid-area: projectsHead;
+}
+
+#p1title {
+    grid-area: p1title;
+}
+
+#p1image {
+    grid-area: p1image;
+}
+
+#p1text {
+    grid-area: p1text;
+}
+
+#p1tech {
+    grid-area: p1tech;
+}
+
+#p2title {
+    grid-area: p2title;
+}
+
+#p2image {
+    grid-area: p2image;
+}
+
+#p2text {
+    grid-area: p2text;
+}
+
+#p2tech {
+    grid-area: p2tech;
+}
+
+#p3title {
+    grid-area: p3title;
+}
+
+#p3image {
+    grid-area: p3image;
+}
+
+#p3text {
+    grid-area: p3text;
+}
+
+#p3tech {
+    grid-area: p3tech;
+}
+
+#p4title {
+    grid-area: p4title;
+}
+
+#p4image {
+    grid-area: p4image;
+}
+
+#p4text {
+    grid-area: p4text;
+}
+
+#p4tech {
+    grid-area: p4tech;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+#details {
+    grid-area: details;
+}
+
+#form {
+    grid-area: form;
+}
+
+img {
+    max-width: 75%;
+}
+
+input {
+    display: flex;
 }
