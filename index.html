@@ -10,20 +10,20 @@
 
 </head>
 
-<body>
+<body >
     <img src="assets/Swirl.png" id="swirl">
     <h1>Daniel Jordan Web Developer</h1>
 
-    <img src="assets/Sleeve Roll.jpg" id="sleeveRoll">
+    <img src="assets/Sleeve Roll.jpg" id="sleeveRoll" class="bio">
 
     
         <h2 id="bioTitle" onclick="showBio()" onmouseover="underlineHeading()">Bio</h2>
         
-        <div id="bio">My name is Dan. I began learning the drums at 12 years old. Since then it has turned into a passion/obsession. I studied at Derby Yamaha Music School and achieved a distinction at grade 8 when I was 16. I then began playing in local cover bands around the Derbyshire area whilst studying Music Technology at Derby College. I achieved a triple distinction for my work on this course as well as obtaining a role at Derby Yamaha Music School as a drum teacher. At 18 I went on to study Music Technology and Production at the University of Derby, graduating with a 2:1. Since completing my degree I have performed all over the country with various bands and productions.
+        <div id="bio" class="bio">My name is Dan. I began learning the drums at 12 years old. Since then it has turned into a passion/obsession. I studied at Derby Yamaha Music School and achieved a distinction at grade 8 when I was 16. I then began playing in local cover bands around the Derbyshire area whilst studying Music Technology at Derby College. I achieved a triple distinction for my work on this course as well as obtaining a role at Derby Yamaha Music School as a drum teacher. At 18 I went on to study Music Technology and Production at the University of Derby, graduating with a 2:1. Since completing my degree I have performed all over the country with various bands and productions.
         I am now also accredited by the Derby & Derbyshire Music Partnership.
     </div>
 
-    <div id="linkedIn"><a href="https://www.linkedin.com/in/daniel-jordan-5b10ba77/">
+    <div id="linkedIn" class="bio"><a href="https://www.linkedin.com/in/daniel-jordan-5b10ba77/">
         <img src="assets/LI-Logo.png" id="linkedInImage">
     </a>
 </div>
@@ -106,10 +106,10 @@
                 <label>Your name:</label>
                 <input type="text" id="name"> <br>
                 <label>Your message:</label>
-                <input type="text" id="message"> <br>
+                <input type="textarea" rows="10" id="message"> <br>
                 <input type="submit">
 
             </form>
 
-
-</body>
+<script src="script.js"> pageLayout()</script>
+</body onload>

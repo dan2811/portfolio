@@ -172,3 +172,123 @@ img {
 input {
     display: flex;
 }
+
+.bio {
+    display: none;
+}
+
+.project {
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .bio {
+        display: block;
+    }
+    
+    .project {
+        display: block;
+    }
+    
+    .contact {
+        display: block;
+    }
+
+    
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: 0.75rem;
+
+        grid-template-areas: 
+        "heading heading heading heading heading ."
+        "bioTitle bioTitle bioTitle bioTitle . ."
+        "bio bio bio bio sleeveRoll sleeveRoll"
+        "bio bio bio bio linkedIn linkedIn"
+        ". . . . . ."
+        ". . . . . ."
+        "projectsHead projectsHead projectsHead projectsHead . ."
+        "p1title p1title . p2title p2title ."
+        "p1image p1tech p1tech p2image p2tech p2tech"
+        "p1text p1text p1text p2text p2text p2text"
+        "p3title p3title . p4title p4title ."
+        "p3image p3tech p3tech p4image p4tech p4tech"
+        "p3text p3text p3text p4text p4text p4text"
+        "contact contact contact contact . ."
+        "details details details details details details"
+        "details details details details details details"
+        "form form form form form form"
+        "form form form form form form"
+        "form form form form form form"
+        "form form form form form form"
+        "form form form form form form";
+        
+    }
+    .bio {
+        display: block;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    #projectsHead {
+        padding-left: 10%;
+        padding-top: 20%;
+    }
+    
+    .project {
+        display: block;
+        padding-left: 10%;
+    }
+    
+    .contact {
+        display: block;
+    }
+
+    h1 {
+        padding-left: 10%;
+    }
+
+    #bioTitle {
+        padding: 10%;
+    }
+
+    #contact {
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    .contact {
+        padding-left: 10%;
+
+    }
+
+    form {
+        font-size: 2rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+    #message{
+
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
